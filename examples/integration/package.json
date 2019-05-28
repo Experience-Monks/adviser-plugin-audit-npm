@@ -1,0 +1,16 @@
+{
+  "name": "integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Iran Reyes <iranreyesfleitas@gmail.com> (http://www.iranreyes.com)",
+  "license": "MIT",
+  "dependencies": {
+    "adviser": "0.0.1",
+    "chalk": "^2.4.2",
+    "lodash": "^4.17.9"
+  }
+}
