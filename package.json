@@ -1,6 +1,6 @@
 {
   "name": "adviser-plugin-audit-npm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Audit npm plugin for adviser",
   "main": "src/index.js",
   "scripts": {
