@@ -26,8 +26,14 @@ class MinVulnerabilityAllow extends Adviser.Rule {
 
           try {
             auditOutput = JSON.parse(stdout);
+
+            if (auditOutput.error) {
+              reject(auditOutput.error.summary || auditOutput.error.message);
+              return;
+            }
           } catch (error) {
-            throw error;
+            reject(auditOutput.error.summary || auditOutput.error.message);
+            return;
           }
 
           const vulnerabilities = Object.keys(auditOutput.advisories).filter(
